@@ -30,7 +30,9 @@ Bug reports, bug fixes, feature requests, and feature additions are welcome.
 * `git clone https://github.com/somedude232/netdefs/`
 
 ## Usage
-Specify the crate in your `Cargo.toml`: `netdefs = "0.1"`
+Specify the crate in your `Cargo.toml`:
+* `netdefs = "0.1"` (Once on crates.io) **OR**
+* `netdefs = { path="/home/user/my-git-or-rust-workspace/netdefs" }`
 
 And make sure to import it at the top of your Rust files: `extern crate netdefs;`
 
