@@ -1,0 +1,22 @@
+[package]
+name = "netdefs"
+version = "0.1.0"
+authors = ["Some Dude <7zbayf+sw1l67jjhlbk@sharklasers.com>"]
+
+description = "Common and useful definitions for data link, network, and transport layers."
+readme = "README.md"
+keywords = ["network","definitions","netlib","netdef"]
+
+[dependencies]
+netdefs-macros = { path = "./macros", version="0.1" }
+phf = "0.7.21"
+procedural-masquerade = { path = "./procedural-masquerade", version="0.1" }
+regex = "0.2.2"
+chrono = "0.4"
+
+[build-dependencies]
+syn = "0.11"
+quote = "0.3"
+
+[workspace]
+members = [".", "./macros"]
