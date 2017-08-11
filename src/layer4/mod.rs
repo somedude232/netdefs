@@ -71,7 +71,3 @@ u8_key_phf_map! {
         0x85 => TransportProtocol::FC,
     }
 }
-
-pub fn parse_protocol_raw(proto_num: u8) -> Result<TransportProtocol,TransportProtocolNotRecognizedError> {
-    TransportProtocols(proto_num).cloned().ok_or(TransportProtocolNotRecognizedError(proto_num))
-}
